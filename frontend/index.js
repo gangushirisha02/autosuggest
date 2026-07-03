@@ -3,12 +3,12 @@ const users = [
   {
     "name" :"Shirisha",
     "role" : "Student at BVRITH",
-    "image" : "./images/siri.jpg"
+    "image" : "./images/siri2.jpg"
   },
   {
     "name" :"siri",
     "role" : "siri the swag",
-    "image" : "./images/siri1.png"
+    "image" : "./images/siri1.jpg"
   },
 ]
 let curUserId = 0;
@@ -18,7 +18,7 @@ function toggle(){
   else
     curUserId=0;
   // image
-  document.getElementById("card-img").src=users[curUserId].image;
+  document.getElementById("img").src=users[curUserId].image;
   // name
   document.getElementById("card-name").innerText=users[curUserId].name;
   // role
