@@ -1,9 +1,31 @@
 h1{
-    color: lightseagreen;
+    color: grey;
 }
 h2{
     color: lightpink;
 }
-body{
-    color: lightcyan;
+#Home-intro{
+    text-align: center;
+    background-color: lightgray;
+    border: 3px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#Home-intro:hover{
+    background-color: lightblue;
+}
+#p2{
+    color: blue;
+}
+#nav{
+    background-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#nav a{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
