@@ -8,15 +8,15 @@
     margin-left: auto;
     display : flex;
 }
-#searchbar{
-    text-align: center;
-    margin-top: 40px;
-}
 #p1{
     color: gray;
 }
 .Shee{
     color: blue;
+}
+#searchbar{
+    text-align: center;
+    margin-top: 40px;
 }
 #search{
     width: 300px;
@@ -36,4 +36,7 @@
     padding: 3px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); 
     margin-left: 37.2%;
+}
+#suggestion-items{
+   
 }
