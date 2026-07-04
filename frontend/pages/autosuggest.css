@@ -1,0 +1,39 @@
+#upper {
+    display: flex;
+    align-items: center;
+} 
+#upper span:last-child{
+    /* <!--or we can use position:fixed; and top:20px; right:20px; --> */
+    font-size: 12px;
+    margin-left: auto;
+    display : flex;
+}
+#searchbar{
+    text-align: center;
+    margin-top: 40px;
+}
+#p1{
+    color: gray;
+}
+.Shee{
+    color: blue;
+}
+#search{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.lense{
+    position:relative;
+    left: 35px;
+}
+#suggestion-box{
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); 
+    margin-left: 37.2%;
+}
