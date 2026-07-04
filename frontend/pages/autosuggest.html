@@ -24,5 +24,39 @@
     <div id="suggestion-box">   
 
     </div>
+    <script>
+        var searchBox = document.getElementById("search");
+        var suggestionBox = document.getElementById("suggestion-box");
+        searchBox.addEventListener("input", function() {
+            //1.get user type text
+            //2.make api call to get suggestions
+            //3.display results in html
+
+            var searchTerm = searchBox.value.trim();
+            if (searchTerm.length > 0) {
+                var url1="https://autosuggest-backend.onrender.com/api/autosuggest?q=";
+                var url2= "&algorithm=brute&limit=10&weighted=false";
+                var fullUrl=url1+searchTerm+url2;
+                fetch(fullUrl)
+                    .then(function(response) {
+                        return response.json();
+                    })
+                    .then(function(data){
+                        console.log(data);
+                        var resultArray = data.results;
+                        var htmlResults = "";
+                        for (var i = 0; i < resultArray.length; i++) {
+                            htmlResults += "<div id='suggestion-items'>"+resultArray[i].text+"</div>";
+                        }
+                        //  var suggestionBox = document.getElementById("suggestion-box");
+                        suggestionBox.innerHTML = htmlResults;
+                    })
+
+            } else {
+                clearSuggestions();
+            }
+        });
+        
+    </script>
 </body>
 </html>
