@@ -31,10 +31,10 @@ h2{
 }
 #card{
     width: 300px;
-    border: 1px solid gray;
+    border: 2px solid gray;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
     margin: 20px auto;
     text-align: center;
 
@@ -42,6 +42,7 @@ h2{
 #card-img img{
     width: 100%;
     height: auto;
+
 }
 #card-data{
 text-align: center;
@@ -53,8 +54,9 @@ body{
 }
 #card-btn{
     background-color: lightblue;
-    border: none;
+    border: 1px solid aqua;
     padding: 10px 20px;
     cursor: pointer;
     margin-bottom: 10px;
+    width: 100%;
 }
